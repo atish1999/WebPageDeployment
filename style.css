@@ -1,0 +1,107 @@
+/* basic resets */
+body {
+    /* by default body has a margin of 8px */
+    margin: 0rem 2.5rem;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    /*to remove underline in anchor*/
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+/* ********************************* */
+
+header {
+    display: flex;
+    /* header has 2 children h1 and ul and these 2 will be arranged ine by ine inside this header */
+    justify-content: space-between;
+    /* it helped to apply spacing between h1 and ul as well as arranging them horizontally  */
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    /* ul has 3 children i.e. 3 li's 
+     and each of those li will be arranged one by one inside ul 
+    */
+    width: 20rem;
+
+}
+
+li {
+    list-style: none;
+    /*to remove default styling in list*/
+}
+
+ul>li {
+    width: 30%;
+    font-size: 1.5rem;
+}
+
+/************image****************** */
+
+main-img {
+    width: 100vw;
+    height: auto;
+}
+
+/* ************* main *************** */
+
+.parent {
+    /* border: 10px solid red; */
+    margin-top: 2rem;
+    text-align: center;
+    display: flex;
+    /* it has 3 children we are arranging them by given space evenly by using justify-content property*/
+    justify-content: space-evenly;
+}
+
+.child {
+    /* border: 5px solid blue; */
+    /* As we are using % as unit and parent has applied flex property then each of the child will be taking 30% of its parent width */
+    width: 30%;
+}
+
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: red;
+}
+
+
+/* footer tag*/
+.footer-parent {
+    height: 5rem;
+    background-color: black;
+    display: flex;
+    /* following 2 attributes will be applied to center a div */
+    /* It is used for horizontally spacing */
+    justify-content: center;
+    /* It is used for vertically spacing */
+    align-items: center;
+}
+
+.footer-content {
+    color: white;
+    text-align: center;
+    /* weight is for blodness */
+    font-weight: 700;
+    /* size is for height and width */
+    font-size: 1.5rem;
+    /* enforce uppercase */
+    text-transform: uppercase;
+}
